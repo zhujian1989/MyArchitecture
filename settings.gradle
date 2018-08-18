@@ -1,0 +1,7 @@
+include ':app',
+        ':libbase',
+        ':libres',
+        ':libdata',
+        ':moduleusers',
+        ':modulesearch',
+        ':libprovider'

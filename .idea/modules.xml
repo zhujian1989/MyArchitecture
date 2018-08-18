@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyArchitecture.iml" filepath="$PROJECT_DIR$/.idea/MyArchitecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libbase/libbase.iml" filepath="$PROJECT_DIR$/libbase/libbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libdata/libdata.iml" filepath="$PROJECT_DIR$/libdata/libdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libprovider/libprovider.iml" filepath="$PROJECT_DIR$/libprovider/libprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libres/libres.iml" filepath="$PROJECT_DIR$/libres/libres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulesearch/modulesearch.iml" filepath="$PROJECT_DIR$/modulesearch/modulesearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moduleusers/moduleusers.iml" filepath="$PROJECT_DIR$/moduleusers/moduleusers.iml" />
+    </modules>
+  </component>
+</project>
