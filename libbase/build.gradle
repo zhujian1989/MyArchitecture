@@ -26,36 +26,79 @@ android {
         }
     }
 
+
+    // 使用Java1.8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        // as noted by @Vishnuvathsan you may also need to include
+        // variations on the file name. It depends on your dependencies.
+        // Some other common variations on notice and license file names
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation deps.support.v4
-    implementation deps.support.design
-    implementation deps.support.annotations
-    implementation deps.support.recyclerview
-    implementation deps.support.cardview
-    implementation deps.support.core_utils
-    implementation deps.support.appcompat
+    api deps.support.v4
+    api deps.support.design
+    api deps.support.annotations
+    api deps.support.recyclerview
+    api deps.support.cardview
+    api deps.support.core_utils
+    api deps.support.appcompat
+    api deps.constraint_layout
 
-    implementation deps.constraint_layout
+    api deps.retrofit.runtime
+    api deps.retrofit.gson
+    api deps.okhttp3.okhttp_logging_interceptor
+    api deps.okhttp3.okhttp
+    api deps.rx.adapter
+    api deps.rx.rxjava2
+    api deps.rx.rx_android
 
-    implementation deps.dagger.runtime
-    implementation deps.dagger.android
-    implementation deps.dagger.android_support
+    api deps.dagger.runtime
+    api deps.dagger.android
+    api deps.dagger.android_support
     annotationProcessor deps.dagger.compiler
     annotationProcessor deps.dagger.android_support_compiler
 
-    implementation deps.arouter.runtime
+    api deps.arouter.runtime
     annotationProcessor deps.arouter.compiler
 
-    implementation deps.butterknife.runtime
+    api deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
 
-    implementation deps.multidex
+    api deps.multidex
 
-    testImplementation 'junit:junit:4.12'
+    testImplementation deps.junit
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
 }

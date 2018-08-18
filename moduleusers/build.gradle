@@ -1,8 +1,10 @@
+
 if(build_module_user_versions.isModule) {
     apply plugin: 'com.android.library'
 }else{
     apply plugin: 'com.android.application'
 }
+apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion build_module_user_versions.compile_sdk
@@ -48,41 +50,54 @@ android {
         }
     }
 
+
+    // 使用Java1.8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        // as noted by @Vishnuvathsan you may also need to include
+        // variations on the file name. It depends on your dependencies.
+        // Some other common variations on notice and license file names
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation deps.support.v4
-    implementation deps.support.design
-    implementation deps.support.annotations
-    implementation deps.support.recyclerview
-    implementation deps.support.cardview
-    implementation deps.support.core_utils
-    implementation deps.support.appcompat
-
-    implementation deps.constraint_layout
-
-    implementation deps.dagger.runtime
-    implementation deps.dagger.android
-    implementation deps.dagger.android_support
     annotationProcessor deps.dagger.compiler
     annotationProcessor deps.dagger.android_support_compiler
-
-    implementation deps.arouter.runtime
     annotationProcessor deps.arouter.compiler
-
-    implementation deps.rx.rxjava2
-    implementation deps.rx.rx_android
-
-    implementation deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
 
-    testImplementation deps.junit
-    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
-    implementation project(path: ':libres')
-    implementation project(path: ':libdata')
-    implementation project(path: ':libbase')
-    implementation project(path: ':libprovider')
+    api project(path: ':libres')
+    api project(path: ':libdata')
+    api project(path: ':libbase')
+    api project(path: ':libprovider')
 }

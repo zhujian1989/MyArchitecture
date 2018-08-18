@@ -27,9 +27,6 @@ android {
         }
     }
 
-
-
-
     // 使用Java1.8
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -71,47 +68,24 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation deps.support.v4
-    implementation deps.support.design
-    implementation deps.support.annotations
-    implementation deps.support.recyclerview
-    implementation deps.support.cardview
-    implementation deps.support.core_utils
-    implementation deps.support.appcompat
 
-    implementation deps.constraint_layout
-
-    implementation deps.dagger.runtime
-    implementation deps.dagger.android
-    implementation deps.dagger.android_support
     annotationProcessor deps.dagger.compiler
     annotationProcessor deps.dagger.android_support_compiler
-
-    implementation deps.arouter.runtime
     annotationProcessor deps.arouter.compiler
-
-    implementation deps.rx.rxjava2
-    implementation deps.rx.rx_android
-
-    implementation deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
 
-    testImplementation deps.junit
-    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
-
-    implementation project(path: ':libres')
-    implementation project(path: ':libbase')
-    implementation project(path: ':libdata')
-    implementation project(path: ':libprovider')
+    api project(path: ':libres')
+    api project(path: ':libbase')
+    api project(path: ':libdata')
+    api project(path: ':libprovider')
 
 
     if(build_module_user_versions.isModule) {
-        implementation project(path: ':moduleusers')
+        api project(path: ':moduleusers')
     }
 
     if(build_module_search_versions.isModule) {
-        implementation project(path: ':modulesearch')
+        api project(path: ':modulesearch')
     }
 
 }
