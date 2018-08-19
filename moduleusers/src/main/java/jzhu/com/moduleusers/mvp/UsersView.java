@@ -1,7 +1,7 @@
 package jzhu.com.moduleusers.mvp;
 
 import jzhu.com.libbase.base.BaseView;
-import jzhu.com.moduleusers.model.UserModel;
+import jzhu.com.libprovider.model.UserModel;
 
 import java.util.List;
 

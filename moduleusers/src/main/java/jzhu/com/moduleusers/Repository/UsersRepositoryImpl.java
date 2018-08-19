@@ -3,7 +3,7 @@ package jzhu.com.moduleusers.Repository;
 import io.reactivex.Observable;
 import jzhu.com.libdata.network.RetrofitFactory;
 import jzhu.com.moduleusers.api.UsersApi;
-import jzhu.com.moduleusers.model.UserModel;
+import jzhu.com.libprovider.model.UserModel;
 
 import javax.inject.Inject;
 import java.util.List;

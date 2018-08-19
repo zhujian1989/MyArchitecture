@@ -6,7 +6,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import jzhu.com.libbase.base.BasePresenter;
 import jzhu.com.moduleusers.Repository.UsersRepository;
-import jzhu.com.moduleusers.model.UserModel;
+import jzhu.com.libprovider.model.UserModel;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -29,7 +29,7 @@ public class UsersPresenter extends BasePresenter<UsersView> {
     }
 
     public void getUsers() {
-        usersRepository.getUsers().subscribeOn(Schedulers.io()).doOnSubscribe(new Consumer<Disposable>() {
+        usersRepository.getUsers().doOnSubscribe(new Consumer<Disposable>() {
             @Override
             public void accept(Disposable disposable) throws Exception {
                 addDisposable(disposable);

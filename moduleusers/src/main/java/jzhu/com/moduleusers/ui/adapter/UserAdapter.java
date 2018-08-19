@@ -10,13 +10,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import jzhu.com.moduleusers.R;
 import jzhu.com.moduleusers.R2;
-import jzhu.com.moduleusers.model.UserModel;
+import jzhu.com.libprovider.model.UserModel;
 
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
 
     private List<UserModel> list;
+
+    private OnItemClickListener onItemClickListener;
 
     @NonNull
     @Override
@@ -30,6 +32,13 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
     public void onBindViewHolder(@NonNull UserAdapter.UserHolder holder, int position) {
         UserModel userModel = list.get(position);
         holder.textView.setText(userModel.getLogin());
+        holder.textView.setTag(userModel);
+        holder.textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onItemClickListener.onItemClick(v);
+            }
+        });
     }
 
     @Override
@@ -52,4 +61,15 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
             ButterKnife.bind(this, itemView);
         }
     }
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
+    public interface OnItemClickListener{
+        void onItemClick(View v);
+    }
+
+
+
 }
