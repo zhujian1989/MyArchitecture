@@ -26,6 +26,7 @@ public class InterceptorUtil {
             public Response intercept(Chain chain) throws IOException {
                 Request request = chain.request()
                                        .newBuilder()
+                                       .addHeader("Accept","application/vnd.github.v3+json")
                                        .addHeader("Content-Type",
                                                   "application/json")
                                        .addHeader("charset", "UTF-8")

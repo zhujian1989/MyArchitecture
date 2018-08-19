@@ -1,9 +1,9 @@
 if(build_module_search_versions.isModule) {
     apply plugin: 'com.android.library'
+    apply plugin: 'com.jakewharton.butterknife'
 }else{
     apply plugin: 'com.android.application'
 }
-apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion build_module_search_versions.compile_sdk

@@ -1,2 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="jzhu.com.libbase"/>
+          package="jzhu.com.libbase">
+    <application>
+        <activity android:name=".base.BaseMvpActivity"/>
+    </application>
+</manifest>

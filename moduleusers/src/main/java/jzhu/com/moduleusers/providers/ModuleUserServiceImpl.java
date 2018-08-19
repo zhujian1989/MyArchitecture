@@ -5,14 +5,14 @@ import android.support.v4.app.Fragment;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import jzhu.com.libprovider.config.RouterPath;
 import jzhu.com.libprovider.providers.ModuleUserService;
-import jzhu.com.moduleusers.ui.MainFragment;
+import jzhu.com.moduleusers.ui.fragment.UsersFragment;
 
 @Route(path = RouterPath.ModuleUserPath.MAIN_FRAGMENT_PROVIDER,name = "ModuleUserServiceImpl")
 public class ModuleUserServiceImpl implements ModuleUserService {
 
     @Override
     public Fragment getModuleUserFragment() {
-        return new MainFragment();
+        return new UsersFragment();
     }
 
     @Override

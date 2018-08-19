@@ -96,6 +96,9 @@ dependencies {
     api deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
 
+    api deps.lifecycle.runtime
+    api deps.lifecycle.extensions
+
     api deps.multidex
 
     testImplementation deps.junit
