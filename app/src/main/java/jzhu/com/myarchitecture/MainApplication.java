@@ -7,6 +7,8 @@ public class MainApplication extends BaseApplication {
 
     @Override
     protected void injectApp() {
-        DaggerAppComponent.builder().build().inject(this);
+        DaggerAppComponent.builder()
+                          .build()
+                          .inject(this);
     }
 }

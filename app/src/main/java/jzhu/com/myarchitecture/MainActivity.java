@@ -45,6 +45,7 @@ public class MainActivity extends BaseActivity {
         ARouter.getInstance().inject(this);
         initFragments();
         initTabLayout();
+
     }
 
     private void initFragments() {

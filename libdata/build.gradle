@@ -64,6 +64,18 @@ dependencies {
 
     testImplementation deps.junit
 
-    api project(path: ':libbase')
+    api deps.retrofit.runtime
+    api deps.retrofit.gson
+    api deps.okhttp3.okhttp_logging_interceptor
+    api deps.okhttp3.okhttp
+    api deps.rx.adapter
+    api deps.rx.rxjava2
+    api deps.rx.rx_android
+
+    api deps.dagger.runtime
+    api deps.dagger.android
+    api deps.dagger.android_support
+    annotationProcessor deps.dagger.compiler
+    annotationProcessor deps.dagger.android_support_compiler
 
 }

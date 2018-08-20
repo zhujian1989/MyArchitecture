@@ -21,6 +21,8 @@ import jzhu.com.moduleusers.mvp.UsersPresenter;
 import jzhu.com.moduleusers.mvp.UsersView;
 import jzhu.com.moduleusers.ui.adapter.UserAdapter;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.List;
 
 public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements UsersView, SwipeRefreshLayout.OnRefreshListener {
@@ -37,9 +39,13 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     @Autowired
     ModuleSearchService mSearchService;
 
-    private UserAdapter mUserAdapter;
+    @Named("users")
+    @Inject
+    UserAdapter mUserAdapter;
 
-    private UserAdapter mFollowersAdapter;
+    @Named("followers")
+    @Inject
+    UserAdapter mFollowersAdapter;
 
     @Override
     protected int getLayoutId() {
@@ -50,8 +56,7 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     protected void initContentView(Bundle savedInstanceState) {
         initViews();
         mPresenter.onAttachView(this);
-        loadData();
-    }
+        loadData(); }
 
     @Override
     protected boolean injectRouter() {
@@ -60,7 +65,6 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
 
     private void initViews() {
         mSwipeRefreshLayout.setOnRefreshListener(this);
-        mUserAdapter = new UserAdapter();
         mUsersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mUsersRecyclerView.setAdapter(mUserAdapter);
         mUserAdapter.setOnItemClickListener(new UserAdapter.OnItemClickListener() {
@@ -72,7 +76,6 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
         });
 
 
-        mFollowersAdapter = new UserAdapter();
         mFollowersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mFollowersRecyclerView.setAdapter(mFollowersAdapter);
 
