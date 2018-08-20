@@ -4,6 +4,9 @@
     style="@style/MatchWrap"
     android:id="@+id/username"
     android:layout_height="40dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:textColor="@color/text_dark"
     android:gravity="center_vertical"
 />
 

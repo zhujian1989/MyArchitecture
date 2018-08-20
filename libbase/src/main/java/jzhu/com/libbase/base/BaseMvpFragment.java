@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import jzhu.com.libbase.util.ToastUtils;
 
 import javax.inject.Inject;
 
@@ -76,7 +77,7 @@ public abstract class BaseMvpFragment<T extends BasePresenter> extends BaseInjec
 
     @Override
     public void showToast(String msg) {
-
+        ToastUtils.show(msg);
     }
 
 }

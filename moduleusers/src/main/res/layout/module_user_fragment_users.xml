@@ -8,9 +8,21 @@
             android:id="@+id/refresh"
             style="@style/MatchMatch">
 
-        <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler_view"
-                style="@style/MatchMatch"
-        />
+        <LinearLayout style="@style/MatchMatch">
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_users"
+                    style="@style/MatchMatch"
+                    android:background="@color/common_white"
+                    android:layout_weight="1"
+            />
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_followers"
+                    style="@style/MatchMatch"
+                    android:layout_weight="2"
+            />
+
+        </LinearLayout>
+
     </android.support.v4.widget.SwipeRefreshLayout>
 </FrameLayout>

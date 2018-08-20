@@ -3,6 +3,7 @@ package jzhu.com.libbase.base;
 import android.os.Bundle;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import jzhu.com.libbase.util.ToastUtils;
 
 import javax.inject.Inject;
 
@@ -60,7 +61,7 @@ public abstract class BaseMvpActivity<T extends BasePresenter> extends BaseInjec
 
     @Override
     public void showToast(String msg) {
-
+        ToastUtils.show(msg);
     }
 
 }

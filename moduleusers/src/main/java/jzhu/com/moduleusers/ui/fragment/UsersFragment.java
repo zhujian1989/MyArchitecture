@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import butterknife.BindView;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
@@ -29,13 +28,18 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     @BindView(R2.id.refresh)
     SwipeRefreshLayout mSwipeRefreshLayout;
 
-    @BindView(R2.id.recycler_view)
-    RecyclerView mRecyclerView;
+    @BindView(R2.id.recycler_view_users)
+    RecyclerView mUsersRecyclerView;
+
+    @BindView(R2.id.recycler_view_followers)
+    RecyclerView mFollowersRecyclerView;
 
     @Autowired
     ModuleSearchService mSearchService;
 
     private UserAdapter mUserAdapter;
+
+    private UserAdapter mFollowersAdapter;
 
     @Override
     protected int getLayoutId() {
@@ -57,8 +61,8 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     private void initViews() {
         mSwipeRefreshLayout.setOnRefreshListener(this);
         mUserAdapter = new UserAdapter();
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        mRecyclerView.setAdapter(mUserAdapter);
+        mUsersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        mUsersRecyclerView.setAdapter(mUserAdapter);
         mUserAdapter.setOnItemClickListener(new UserAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View v) {
@@ -66,6 +70,12 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
                 handleData(mSearchService.searchFollowersByName(userModel.getLogin()));
             }
         });
+
+
+        mFollowersAdapter = new UserAdapter();
+        mFollowersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        mFollowersRecyclerView.setAdapter(mFollowersAdapter);
+
     }
 
     @Override
@@ -109,12 +119,7 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
                                           .subscribe(new Consumer<List<UserModel>>() {
                                               @Override
                                               public void accept(List<UserModel> userModels) throws Exception {
-
-                                                  Log.i("zj", "size:" + userModels.size());
-                                              }
-                                          }, new Consumer<Throwable>() {
-                                              @Override
-                                              public void accept(Throwable throwable) throws Exception {
+                                                  mFollowersAdapter.setData(userModels);
                                               }
                                           });
         disposable.isDisposed();
