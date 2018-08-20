@@ -1,4 +1,4 @@
-package jzhu.com.moduleusers.mvp;
+package jzhu.com.moduleusers.mvp.view;
 
 import jzhu.com.libbase.base.BaseView;
 import jzhu.com.libprovider.model.UserModel;

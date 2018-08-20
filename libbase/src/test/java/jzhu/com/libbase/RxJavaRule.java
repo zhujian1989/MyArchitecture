@@ -1,4 +1,4 @@
-package jzhu.com.libdata;
+package jzhu.com.libbase;
 
 import io.reactivex.Scheduler;
 import io.reactivex.android.plugins.RxAndroidPlugins;

@@ -1,4 +1,4 @@
-package jzhu.com.libdata;
+package jzhu.com.libbase;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;

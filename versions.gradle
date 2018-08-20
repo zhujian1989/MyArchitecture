@@ -37,6 +37,10 @@ versions.timber = "4.5.1"
 versions.android_gradle_plugin = "3.1.4"
 versions.rxjava2 = "2.2.0"
 versions.rx_android = "2.0.2"
+versions.rx_cache = "1.8.3-2.x"
+versions.rx_permissions = "0.9.5@aar"
+versions.rx_lifecycle = "2.2.2"
+versions.rx_cache_jolyglot_gson="0.0.4"
 versions.butterknife = "8.4.0"
 versions.realm = "3.1.1"
 versions.arouter_api = "1.4.0"
@@ -134,6 +138,12 @@ def rx = [:]
 rx.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
 rx.adapter = "com.squareup.retrofit2:adapter-rxjava2:$versions.rxjava2"
 rx.rx_android = "io.reactivex.rxjava2:rxandroid:$versions.rx_android"
+rx.rx_cache = "com.github.VictorAlbertos.RxCache:runtime:$versions.rx_cache"
+rx.rx_cache_jolyglot_gson = "com.github.VictorAlbertos.Jolyglot:gson:$versions.rx_cache_jolyglot_gson"
+rx.rx_permissions = "com.tbruyelle.rxpermissions2:rxpermissions:$versions.rx_permissions"
+rx.rx_lifecycle = "com.trello.rxlifecycle2:rxlifecycle:$versions.rx_lifecycle"
+rx.rx_lifecycle_android = "com.trello.rxlifecycle2:rxlifecycle-android:$versions.rx_lifecycle"
+rx.rx_lifecycle_components = "com.trello.rxlifecycle2:rxlifecycle-components:$versions.rx_lifecycle"
 deps.rx = rx
 
 def arouter = [:]
@@ -160,6 +170,7 @@ ext.deps = deps
 def addRepos(RepositoryHandler handler) {
     handler.google()
     handler.jcenter()
+    handler.maven { url 'https://jitpack.io' }
     handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 ext.addRepos = this.&addRepos

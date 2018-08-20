@@ -9,5 +9,4 @@ public interface UsersRepository{
 
     Observable<List<UserModel>> getUsers();
 
-
 }

@@ -1,6 +1,5 @@
 package jzhu.com.libdata.network;
 
-
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -10,13 +9,9 @@ import java.util.concurrent.TimeUnit;
 
 public class RetrofitFactory {
 
-    public static String BASE_URL_DEBUG = "";
-
     private static volatile RetrofitFactory sInstance;
 
     private Retrofit retrofit;
-
-    private boolean isDebug = true;
 
     private RetrofitFactory() {
         retrofit = new Retrofit.Builder()
@@ -25,6 +20,7 @@ public class RetrofitFactory {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(genericClient())
                 .build();
+
     }
 
     public static RetrofitFactory getInstance() {
@@ -46,9 +42,9 @@ public class RetrofitFactory {
         OkHttpClient httpClient = new OkHttpClient.Builder()
                 .addInterceptor(InterceptorUtil.HeaderInterceptor())
                 .addInterceptor(InterceptorUtil.LogInterceptor())
-                .connectTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)
-                .readTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)
-                .writeTimeout(HttpConfig.HTTP_TIME, TimeUnit.SECONDS)
+                .connectTimeout(HttpConfig.HTTP_OUT_TIME, TimeUnit.SECONDS)
+                .readTimeout(HttpConfig.HTTP_OUT_TIME, TimeUnit.SECONDS)
+                .writeTimeout(HttpConfig.HTTP_OUT_TIME, TimeUnit.SECONDS)
                 .build();
         return httpClient;
     }

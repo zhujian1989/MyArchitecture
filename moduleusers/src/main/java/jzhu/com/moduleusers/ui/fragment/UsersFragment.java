@@ -10,15 +10,14 @@ import com.alibaba.android.arouter.facade.annotation.Autowired;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import jzhu.com.libbase.base.BaseMvpFragment;
 import jzhu.com.libprovider.model.UserModel;
 import jzhu.com.libprovider.providers.ModuleSearchService;
 import jzhu.com.moduleusers.R;
 import jzhu.com.moduleusers.R2;
-import jzhu.com.moduleusers.mvp.UsersPresenter;
-import jzhu.com.moduleusers.mvp.UsersView;
+import jzhu.com.moduleusers.mvp.Presenter.UsersPresenter;
+import jzhu.com.moduleusers.mvp.view.UsersView;
 import jzhu.com.moduleusers.ui.adapter.UserAdapter;
 
 import javax.inject.Inject;
@@ -119,12 +118,7 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     private void handleData(Observable<List<UserModel>> observable) {
         Disposable disposable = observable.subscribeOn(Schedulers.io())
                                           .observeOn(AndroidSchedulers.mainThread())
-                                          .subscribe(new Consumer<List<UserModel>>() {
-                                              @Override
-                                              public void accept(List<UserModel> userModels) throws Exception {
-                                                  mFollowersAdapter.setData(userModels);
-                                              }
-                                          });
+                                          .subscribe(userModels -> mFollowersAdapter.setData(userModels));
         disposable.isDisposed();
     }
 

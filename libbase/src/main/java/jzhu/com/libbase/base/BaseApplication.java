@@ -58,18 +58,6 @@ public abstract class BaseApplication extends Application implements HasActivity
         MultiDex.install(this);
     }
 
-    /**
-     * 这是类库底层的injectApp代码示例，你应该在你的Module中重写该方法:
-     * <p>
-     * DaggerBaseAppComponent.builder()
-     * .cacheModule(getCacheModule())
-     * .appModule(getAppModule())
-     * .globalConfigModule(getGlobalConfigModule())
-     * .httpClientModule(getHttpClientModule())
-     * .serviceModule(getServiceModule())
-     * .build()
-     * .initDI(this);
-     */
     abstract protected void injectApp();
 
     @Override

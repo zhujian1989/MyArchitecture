@@ -83,6 +83,9 @@ dependencies {
     api deps.rx.adapter
     api deps.rx.rxjava2
     api deps.rx.rx_android
+    api deps.rx.rx_lifecycle
+    api deps.rx.rx_lifecycle_android
+    api deps.rx.rx_lifecycle_components
 
     api deps.dagger.runtime
     api deps.dagger.android
@@ -100,6 +103,9 @@ dependencies {
     api deps.lifecycle.extensions
 
     api deps.multidex
+
+    api deps.rx.rx_cache
+    api deps.rx.rx_cache_jolyglot_gson
 
     testImplementation deps.junit
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
