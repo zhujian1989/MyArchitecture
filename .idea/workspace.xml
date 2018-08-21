@@ -61,33 +61,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14e2ce4f-623e-4c29-be0e-373949a0c963" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/cache/RxCacheFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/javaCompile/taskJars.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyArchitecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyArchitecture.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libbase/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/libbase/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libbase/libbase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libbase/libbase.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libdata/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/libdata/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libdata/libdata.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libdata/libdata.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libprovider/libprovider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libprovider/libprovider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libres/libres.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libres/libres.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modulesearch/modulesearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/modulesearch/modulesearch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduleusers/moduleusers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/moduleusers/moduleusers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/api/UsersApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/api/UsersApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/cache/UsersProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/cache/UsersCacheProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/mvp/Presenter/UsersPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/mvp/Presenter/UsersPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +85,17 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MyArchitecture" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -120,11 +105,11 @@
         <counts>
           <entry key="class" value="2" />
           <entry key="gitignore" value="8" />
-          <entry key="gradle" value="143" />
+          <entry key="gradle" value="144" />
           <entry key="iml" value="11" />
-          <entry key="java" value="643" />
+          <entry key="java" value="650" />
           <entry key="json" value="1" />
-          <entry key="md" value="7" />
+          <entry key="md" value="9" />
           <entry key="pro" value="4" />
           <entry key="xml" value="73" />
         </counts>
@@ -133,11 +118,11 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="Git file" value="8" />
-          <entry key="Groovy" value="143" />
+          <entry key="Groovy" value="144" />
           <entry key="IDEA_MODULE" value="11" />
-          <entry key="JAVA" value="643" />
+          <entry key="JAVA" value="650" />
           <entry key="JSON" value="1" />
-          <entry key="Markdown" value="6" />
+          <entry key="Markdown" value="8" />
           <entry key="ProGuard File" value="4" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="73" />
@@ -147,8 +132,8 @@
         <counts>
           <entry key="dummy" value="160" />
           <entry key="gradle" value="874" />
-          <entry key="java" value="10025" />
-          <entry key="md" value="24" />
+          <entry key="java" value="10047" />
+          <entry key="md" value="43" />
           <entry key="txt" value="3" />
           <entry key="xml" value="552" />
         </counts>
@@ -156,8 +141,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="874" />
-          <entry key="JAVA" value="10025" />
-          <entry key="Markdown" value="24" />
+          <entry key="JAVA" value="10047" />
+          <entry key="Markdown" value="43" />
           <entry key="PLAIN_TEXT" value="163" />
           <entry key="XML" value="552" />
         </counts>
@@ -167,19 +152,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libdata/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/jzhu/com/myarchitecture/MainApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/cache/UsersCacheProviders.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/jzhu/com/myarchitecture/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="-272">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,94 +173,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/api/UsersApi.java">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/cache/RxCacheFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/network/RetrofitFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-                <element signature="e#1125#1126#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libbase/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modulesearch/src/main/java/jzhu/com/modulesearch/providers/ModuleSearchServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="39" />
-              <folding>
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/mvp/Presenter/UsersPresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/ui/fragment/UsersFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2697#2698#0" expanded="true" />
-                <element signature="e#3007#3008#0" expanded="true" />
-                <element signature="e#3044#3045#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -7066,13 +6967,11 @@
         <option value="$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/base/BaseResp.java" />
         <option value="$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/ResponseTransformer.java" />
         <option value="$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/CustomException.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/RxUtil.java" />
         <option value="$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/network/BaseResp.java" />
         <option value="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/mvp/UsersPresenter.java" />
         <option value="$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/network/GsonTSpeaker.java" />
         <option value="$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/network/InterceptorUtil.java" />
-        <option value="$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/util/RxUtil.java" />
         <option value="$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/network/RetrofitFactory.java" />
         <option value="$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/cache/ACache.java" />
         <option value="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/api/UsersProviders.java" />
@@ -7102,10 +7001,12 @@
         <option value="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/api/UsersApi.java" />
         <option value="$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/cache/RxCacheFactory.java" />
         <option value="$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/cache/UsersCacheProviders.java" />
+        <option value="$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/util/RxUtil.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -7163,35 +7064,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="moduleusers" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="moduleusers" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="moduleusers" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -7203,8 +7075,86 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myarchitecture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myarchitecture" type="462c0819:PsiDirectoryNode" />
+              <item name="di" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myarchitecture" type="462c0819:PsiDirectoryNode" />
+              <item name="di" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyArchitecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyArchitecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myarchitecture" type="462c0819:PsiDirectoryNode" />
+              <item name="di" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -7625,11 +7575,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.15164521" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18383405" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.29470673" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -7643,12 +7592,12 @@
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50143063" side_tool="true" weight="0.39900866" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.41140026" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.35935563" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4985694" weight="0.32961586" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4985694" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Logcat" order="8" weight="0.37670383" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.44981414" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" weight="0.44981414" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32961586" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Gradle" order="1" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.3297568" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="right" id="Flutter Inspector" order="3" />
       <window_info anchor="right" id="Flutter Outline" order="4" />
@@ -7762,38 +7711,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/base/BaseInjectActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libbase/libbase.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../gradle-4.9/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.0.0-rc01/8143257ed176889e8dacdd3f70f3f9283f58d396/appcompat-1.0.0-rc01-sources.jar!/androidx/appcompat/app/AppCompatActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/cache/ACache.java" />
     <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/mvp/view/UsersView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/versions.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#619#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -7808,11 +7729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -7823,93 +7739,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libdata/src/test/java/jzhu/com/libdata/TestApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libdata/src/test/java/jzhu/com/libdata/TestModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1209#1210#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1446#1447#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1636#1637#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/rx/DefaultOberver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libdata/src/test/java/jzhu/com/libdata/NetworkSimpleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libdata/src/test/java/jzhu/com/libdata/TestApi.java" />
+    <entry file="file://$PROJECT_DIR$/libdata/src/test/java/jzhu/com/libdata/TestModel.java" />
+    <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/rx/DefaultOberver.java" />
+    <entry file="file://$PROJECT_DIR$/libdata/src/test/java/jzhu/com/libdata/NetworkSimpleTest.java" />
     <entry file="file://$PROJECT_DIR$/libbase/src/test/java/jzhu/com/libbase/MethodNameRule.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/libdata/src/androidTest/java/jzhu/com/libdata/SPSimpleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libdata/src/androidTest/java/jzhu/com/libdata/SPSimpleTest.java" />
     <entry file="file://$PROJECT_DIR$/libbase/src/test/java/jzhu/com/libbase/RxJavaRule.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/ApiException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/ApiException.java" />
     <entry file="file://$PROJECT_DIR$/libbase/src/test/java/jzhu/com/libbase/TestModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -7917,13 +7758,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/BannerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/BannerModel.java" />
     <entry file="file://$PROJECT_DIR$/libbase/src/test/java/jzhu/com/libbase/TestApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -7931,20 +7766,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/entity/Banner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/entity.java" />
+    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/entity/Banner.java" />
     <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/providers/ModuleUserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -7952,58 +7775,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/CustomException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/CustomException.java" />
     <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/network/HttpResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/ResponseTransformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/BaseFun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/ResponseTransformer.java" />
+    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/rx/BaseFun.java" />
     <entry file="file://$PROJECT_DIR$/libbase/src/test/java/jzhu/com/libbase/NetworkSimpleTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -8051,9 +7836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -8085,13 +7867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libdata/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -8110,19 +7885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="24" column="39" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="39" />
-          <folding>
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libbase/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -8133,9 +7895,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/cache/UsersCacheProviders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/api/UsersApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/cache/RxCacheFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libbase/src/main/java/jzhu/com/libbase/util/RxUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../gradle-4.9/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.0/ba88ed6468f28df009c013256be77ad72d313965/rxjava-2.2.0-sources.jar!/io/reactivex/ObservableTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/network/RetrofitFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
+        <state relative-caret-position="391">
           <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -8145,9 +7953,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libbase/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/mvp/Presenter/UsersPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
+        <state relative-caret-position="527">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -8157,7 +7972,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/ui/fragment/UsersFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
+        <state relative-caret-position="1003">
           <caret line="84" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -8168,47 +7983,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libdata/src/main/java/jzhu/com/libdata/cache/RxCacheFactory.java">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/media/session/PlaybackState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        <state relative-caret-position="320">
+          <caret line="656" column="30" selection-start-line="656" selection-start-column="30" selection-end-line="656" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/versions.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="24" selection-start-line="24" selection-end-line="47" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#0#619#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/cache/UsersCacheProviders.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jzhu/com/myarchitecture/MainApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jzhu/com/myarchitecture/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/cache/UsersCacheProviders.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/moduleusers/src/main/java/jzhu/com/moduleusers/api/UsersApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
