@@ -72,6 +72,9 @@ dependencies {
     api deps.rx.rxjava2
     api deps.rx.rx_android
 
+    api deps.rx.rx_cache
+    api deps.rx.rx_cache_jolyglot_gson
+    
     api deps.dagger.runtime
     api deps.dagger.android
     api deps.dagger.android_support

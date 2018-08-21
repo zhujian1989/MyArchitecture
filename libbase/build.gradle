@@ -104,9 +104,6 @@ dependencies {
 
     api deps.multidex
 
-    api deps.rx.rx_cache
-    api deps.rx.rx_cache_jolyglot_gson
-
     testImplementation deps.junit
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'

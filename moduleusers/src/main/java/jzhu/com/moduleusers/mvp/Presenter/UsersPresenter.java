@@ -1,8 +1,10 @@
 package jzhu.com.moduleusers.mvp.Presenter;
 
 import io.reactivex.Observable;
+import jzhu.com.libbase.base.BaseApplication;
 import jzhu.com.libbase.base.BasePresenter;
 import jzhu.com.libbase.util.RxUtil;
+import jzhu.com.libdata.cache.RxCacheFactory;
 import jzhu.com.libprovider.model.UserModel;
 import jzhu.com.moduleusers.Repository.UsersRepository;
 import jzhu.com.moduleusers.cache.UsersCacheProviders;
@@ -29,16 +31,16 @@ public class UsersPresenter extends BasePresenter<UsersView> {
     }
 
     public void getUsers() {
-        
+
         Observable<List<UserModel>> users = usersRepository.getUsers();
 
-        UsersCacheProviders.getUserCache().getUsers(users).
+        RxCacheFactory.getInstance().create(BaseApplication.getInstance().getCacheDir(), UsersCacheProviders.class).getUsers(users).
                 doOnSubscribe(disposable -> {
                     addDisposable(disposable);
                     usersView.showLoading();
 
                 }).compose(RxUtil.io2main())
-                           .subscribe(userModels -> {
+                      .subscribe(userModels -> {
                                usersView.getUsersSuc(userModels);
                                usersView.hideLoading();
                            }, throwable -> {
