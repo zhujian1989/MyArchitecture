@@ -9,7 +9,6 @@ import butterknife.BindView;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import jzhu.com.libbase.base.BaseMvpFragment;
 import jzhu.com.libprovider.model.UserModel;
@@ -54,7 +53,8 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     @Override
     protected void initContentView(Bundle savedInstanceState) {
         initViews();
-        loadData(); }
+        loadData();
+    }
 
     @Override
     protected boolean injectRouter() {
@@ -73,7 +73,6 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
             }
         });
 
-
         mFollowersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mFollowersRecyclerView.setAdapter(mFollowersAdapter);
 
@@ -81,21 +80,12 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
 
     @Override
     public void getUsersSuc(List<UserModel> list) {
+        mSwipeRefreshLayout.setRefreshing(false);
         mUserAdapter.setData(list);
     }
 
     @Override
     public void getUsersFail(Throwable throwable) {
-
-    }
-
-    @Override
-    public void showLoading() {
-        mSwipeRefreshLayout.setRefreshing(true);
-    }
-
-    @Override
-    public void hideLoading() {
         mSwipeRefreshLayout.setRefreshing(false);
     }
 
@@ -109,10 +99,13 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     }
 
     private void handleData(Observable<List<UserModel>> observable) {
-        Disposable disposable = observable.subscribeOn(Schedulers.io())
-                                          .observeOn(AndroidSchedulers.mainThread())
-                                          .subscribe(userModels -> mFollowersAdapter.setData(userModels));
-        disposable.isDisposed();
+        observable.doOnSubscribe(disposable ->
+                                         showLoading()).subscribeOn(Schedulers.io())
+                  .observeOn(AndroidSchedulers.mainThread())
+                  .subscribe(userModels -> {
+                      hideLoading();
+                      mFollowersAdapter.setData(userModels);
+                  });
     }
 
 }

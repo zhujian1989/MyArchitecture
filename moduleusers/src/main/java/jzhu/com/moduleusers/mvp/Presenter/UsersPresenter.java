@@ -28,18 +28,11 @@ public class UsersPresenter extends BasePresenter<UsersView> {
         Observable<List<UserModel>> users = usersRepository.getUsers();
 
         RxCacheFactory.getInstance().create(BaseApplication.getInstance().getCacheDir(), UsersCacheProviders.class).getUsers(users).
-                doOnSubscribe(disposable -> {
-                    addDisposable(disposable);
-                    getView().showLoading();
-
-                }).compose(RxUtil.io2main())
-                      .subscribe(userModels -> {
-                          getView().getUsersSuc(userModels);
-                          getView().hideLoading();
-                      }, throwable -> {
-                          getView().getUsersFail(throwable);
-                          getView().hideLoading();
-                      });
+                doOnSubscribe(disposable ->
+                                      addDisposable(disposable)).compose(RxUtil.io2main())
+                      .subscribe(userModels ->
+                                         getView().getUsersSuc(userModels), throwable ->
+                                         getView().getUsersFail(throwable));
     }
 
 }

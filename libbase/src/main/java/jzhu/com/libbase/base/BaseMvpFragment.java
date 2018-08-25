@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import jzhu.com.libbase.util.ToastUtils;
+import jzhu.com.libbase.widget.CommonLoading;
 
 import javax.inject.Inject;
 
@@ -20,9 +21,13 @@ public abstract class BaseMvpFragment<T extends BasePresenter> extends BaseInjec
 
     private Unbinder mUnbinder;
 
+    protected CommonLoading mCommonLoading;
+
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mCommonLoading = CommonLoading.createLoading(getContext());
         mPresenter.onAttachView(this);
     }
 
@@ -67,12 +72,12 @@ public abstract class BaseMvpFragment<T extends BasePresenter> extends BaseInjec
 
     @Override
     public void showLoading() {
-
+        getActivity().runOnUiThread(() -> mCommonLoading.show());
     }
 
     @Override
     public void hideLoading() {
-
+        getActivity().runOnUiThread(() -> mCommonLoading.dismiss());
     }
 
     @Override
