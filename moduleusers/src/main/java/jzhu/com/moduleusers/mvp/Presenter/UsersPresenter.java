@@ -18,16 +18,9 @@ public class UsersPresenter extends BasePresenter<UsersView> {
     @Inject
     UsersRepository usersRepository;
 
-    UsersView usersView;
-
     @Inject
     public UsersPresenter() {
 
-    }
-
-    @Override
-    public void onAttachView(UsersView view) {
-        usersView = view;
     }
 
     public void getUsers() {
@@ -37,22 +30,16 @@ public class UsersPresenter extends BasePresenter<UsersView> {
         RxCacheFactory.getInstance().create(BaseApplication.getInstance().getCacheDir(), UsersCacheProviders.class).getUsers(users).
                 doOnSubscribe(disposable -> {
                     addDisposable(disposable);
-                    usersView.showLoading();
+                    getView().showLoading();
 
                 }).compose(RxUtil.io2main())
                       .subscribe(userModels -> {
-                               usersView.getUsersSuc(userModels);
-                               usersView.hideLoading();
-                           }, throwable -> {
-                               usersView.getUsersFail(throwable);
-                               usersView.hideLoading();
-                           });
-    }
-
-    @Override
-    public void onDetachView() {
-        super.onDetachView();
-        unDisposable();
+                          getView().getUsersSuc(userModels);
+                          getView().hideLoading();
+                      }, throwable -> {
+                          getView().getUsersFail(throwable);
+                          getView().hideLoading();
+                      });
     }
 
 }

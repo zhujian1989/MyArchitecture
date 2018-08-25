@@ -20,6 +20,7 @@ public abstract class BaseMvpActivity<T extends BasePresenter> extends BaseInjec
         setContentView(getLayoutId());
         mUnbinder = ButterKnife.bind(this);
         initContentView(savedInstanceState);
+        mPresenter.onAttachView(this);
     }
 
     /**
@@ -37,6 +38,8 @@ public abstract class BaseMvpActivity<T extends BasePresenter> extends BaseInjec
     protected void onDestroy() {
         super.onDestroy();
         mUnbinder.unbind();
+        mPresenter.onDetachView();
+        mPresenter.unDisposable();
     }
 
     @Override

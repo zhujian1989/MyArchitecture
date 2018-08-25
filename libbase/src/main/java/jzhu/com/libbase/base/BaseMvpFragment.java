@@ -1,6 +1,7 @@
 package jzhu.com.libbase.base;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,13 @@ public abstract class BaseMvpFragment<T extends BasePresenter> extends BaseInjec
     protected View mRootView;
 
     private Unbinder mUnbinder;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPresenter.onAttachView(this);
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (mRootView == null) {
@@ -53,6 +61,8 @@ public abstract class BaseMvpFragment<T extends BasePresenter> extends BaseInjec
     public void onDestroy() {
         super.onDestroy();
         mUnbinder.unbind();
+        mPresenter.onDetachView();
+        mPresenter.unDisposable();
     }
 
     @Override

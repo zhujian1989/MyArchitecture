@@ -3,28 +3,46 @@ package jzhu.com.libbase.base;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
+import java.lang.ref.WeakReference;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
 public abstract class BasePresenter<V extends BaseView> {
 
-    private V view;
+    private WeakReference<V> mViewReference;
+
+    private V mProxyView;
 
     private CompositeDisposable compositeDisposable;
 
     public void onAttachView(V view) {
-        this.view = view;
+
+        this.mViewReference = new WeakReference<V>(view);
+
+        mProxyView = (V) Proxy.newProxyInstance(view.getClass().getClassLoader(), view.getClass().getInterfaces(), new InvocationHandler() {
+            @Override
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                if (mViewReference == null || mViewReference.get() == null) {
+                    return null;
+                }
+                else {
+                    return method.invoke(mViewReference.get(), args);
+                }
+            }
+        });
+
     }
 
     public void onDetachView() {
-        view = null;
-    }
-
-    public boolean isViewAttached() {
-        return view != null;
+        this.mViewReference.clear();
+        this.mViewReference = null ;
+        this.mProxyView = null ;
     }
 
     public V getView() {
-        return view;
+        return mProxyView;
     }
-
 
     public void addDisposable(Disposable subscription) {
         if (compositeDisposable == null || compositeDisposable.isDisposed()) {

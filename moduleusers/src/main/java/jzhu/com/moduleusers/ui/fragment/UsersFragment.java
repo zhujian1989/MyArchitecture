@@ -54,7 +54,6 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     @Override
     protected void initContentView(Bundle savedInstanceState) {
         initViews();
-        mPresenter.onAttachView(this);
         loadData(); }
 
     @Override
@@ -107,12 +106,6 @@ public class UsersFragment extends BaseMvpFragment<UsersPresenter> implements Us
     @Override
     public void onRefresh() {
         loadData();
-    }
-
-    @Override
-    public void onDestroy() {
-        mPresenter.onDetachView();
-        super.onDestroy();
     }
 
     private void handleData(Observable<List<UserModel>> observable) {
