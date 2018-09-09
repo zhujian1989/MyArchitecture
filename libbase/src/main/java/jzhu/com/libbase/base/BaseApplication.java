@@ -48,10 +48,6 @@ public abstract class BaseApplication extends Application implements HasActivity
         ARouter.init(this);
     }
 
-    private boolean isDebug() {
-        return true;
-    }
-
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);

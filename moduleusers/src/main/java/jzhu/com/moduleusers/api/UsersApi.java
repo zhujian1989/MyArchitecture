@@ -10,6 +10,4 @@ public interface UsersApi {
 
     @GET("/users")
     Observable<List<UserModel>> getUsers();
-
-
 }

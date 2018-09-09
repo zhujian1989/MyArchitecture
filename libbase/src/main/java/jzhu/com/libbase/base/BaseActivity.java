@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import com.alibaba.android.arouter.launcher.ARouter;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -13,6 +14,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (injectRouter())
+            ARouter.getInstance().inject(this);
+
+        
         setContentView(getLayoutId());
         mUnbinder = ButterKnife.bind(this);
         initContentView(savedInstanceState);
@@ -29,6 +35,9 @@ public abstract class BaseActivity extends AppCompatActivity {
     //处理bundle数据
     protected abstract void initContentView(Bundle savedInstanceState);
 
+    protected boolean injectRouter() {
+        return false;
+    }
     @Override
     protected void onDestroy() {
         super.onDestroy();

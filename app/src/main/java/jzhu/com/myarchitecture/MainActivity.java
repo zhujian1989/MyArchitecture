@@ -9,8 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import butterknife.BindView;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
-import com.alibaba.android.arouter.launcher.ARouter;
 import jzhu.com.libbase.base.BaseActivity;
+import jzhu.com.libbase.base.BaseInjectActivity;
 import jzhu.com.libprovider.providers.ModuleSearchService;
 import jzhu.com.libprovider.providers.ModuleUserService;
 
@@ -35,6 +35,7 @@ public class MainActivity extends BaseActivity {
 
     private List<Fragment> fragments;
 
+
     @Override
     protected int getLayoutId() {
         return R.layout.activity_main;
@@ -42,10 +43,13 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initContentView(Bundle savedInstanceState) {
-        ARouter.getInstance().inject(this);
         initFragments();
         initTabLayout();
+    }
 
+    @Override
+    protected boolean injectRouter() {
+        return true;
     }
 
     private void initFragments() {

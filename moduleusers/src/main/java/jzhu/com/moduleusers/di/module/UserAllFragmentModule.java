@@ -7,6 +7,6 @@ import jzhu.com.moduleusers.ui.fragment.UsersFragment;
 @Module
 public abstract class UserAllFragmentModule {
 
-    @ContributesAndroidInjector(modules = {UsersModule.class})
+    @ContributesAndroidInjector(modules = { UsersModule.class})
     abstract UsersFragment contributeMainFragmentInjector();
 }

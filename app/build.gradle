@@ -79,7 +79,6 @@ dependencies {
     api project(path: ':libdata')
     api project(path: ':libprovider')
 
-
     if(build_module_user_versions.isModule) {
         api project(path: ':moduleusers')
     }

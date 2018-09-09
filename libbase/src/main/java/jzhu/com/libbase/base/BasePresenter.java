@@ -4,8 +4,6 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
 import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public abstract class BasePresenter<V extends BaseView> {
@@ -20,15 +18,12 @@ public abstract class BasePresenter<V extends BaseView> {
 
         this.mViewReference = new WeakReference<V>(view);
 
-        mProxyView = (V) Proxy.newProxyInstance(view.getClass().getClassLoader(), view.getClass().getInterfaces(), new InvocationHandler() {
-            @Override
-            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                if (mViewReference == null || mViewReference.get() == null) {
-                    return null;
-                }
-                else {
-                    return method.invoke(mViewReference.get(), args);
-                }
+        mProxyView = (V) Proxy.newProxyInstance(view.getClass().getClassLoader(), view.getClass().getInterfaces(), (proxy, method, args) -> {
+            if (mViewReference == null || mViewReference.get() == null) {
+                return null;
+            }
+            else {
+                return method.invoke(mViewReference.get(), args);
             }
         });
 
