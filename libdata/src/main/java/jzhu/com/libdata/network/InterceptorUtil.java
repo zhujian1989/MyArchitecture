@@ -1,5 +1,6 @@
 package jzhu.com.libdata.network;
 
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -30,6 +31,10 @@ public class InterceptorUtil {
 
         return interceptor;
 
+    }
+
+    public static StethoInterceptor stethoInterceptor() {
+        return new StethoInterceptor();
     }
 
 

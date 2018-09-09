@@ -102,7 +102,14 @@ dependencies {
     api deps.lifecycle.runtime
     api deps.lifecycle.extensions
 
+    api deps.stetho.runtime
+
     api deps.multidex
+
+//    debugImplementation deps.leakcanary.debug
+//    debugImplementation deps.leakcanary.debug_support
+//    releaseImplementation deps.leakcanary.release
+
 
     testImplementation deps.junit
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'

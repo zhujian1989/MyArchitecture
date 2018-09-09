@@ -6,6 +6,7 @@ import android.app.Fragment;
 import android.content.Context;
 import android.support.multidex.MultiDex;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.facebook.stetho.Stetho;
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
@@ -38,6 +39,11 @@ public abstract class BaseApplication extends Application implements HasActivity
         BaseApplication.instance = this;
         initARouter();
         injectApp();
+        initStetho();
+    }
+
+    private void initStetho() {
+        Stetho.initializeWithDefaults(this);
     }
 
     private void initARouter() {

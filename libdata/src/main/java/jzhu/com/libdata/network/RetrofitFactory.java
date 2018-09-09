@@ -42,6 +42,7 @@ public class RetrofitFactory {
         OkHttpClient httpClient = new OkHttpClient.Builder()
                 .addInterceptor(InterceptorUtil.HeaderInterceptor())
                 .addInterceptor(InterceptorUtil.LogInterceptor())
+                .addNetworkInterceptor(InterceptorUtil.stethoInterceptor())
                 .connectTimeout(HttpConfig.HTTP_OUT_TIME, TimeUnit.SECONDS)
                 .readTimeout(HttpConfig.HTTP_OUT_TIME, TimeUnit.SECONDS)
                 .writeTimeout(HttpConfig.HTTP_OUT_TIME, TimeUnit.SECONDS)
