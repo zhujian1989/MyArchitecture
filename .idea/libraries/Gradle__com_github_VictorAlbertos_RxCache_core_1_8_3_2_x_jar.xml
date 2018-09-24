@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.VictorAlbertos.RxCache:core:1.8.3-2.x@jar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../gradle-4.9/caches/modules-2/files-2.1/com.github.VictorAlbertos.RxCache/core/1.8.3-2.x/70f0a0f6df9592f6bb9ff85e65c1f9a973d2bade/core-1.8.3-2.x.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../gradle-4.10.1/caches/modules-2/files-2.1/com.github.VictorAlbertos.RxCache/core/1.8.3-2.x/70f0a0f6df9592f6bb9ff85e65c1f9a973d2bade/core-1.8.3-2.x.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../gradle-4.9/caches/modules-2/files-2.1/com.github.VictorAlbertos.RxCache/core/1.8.3-2.x/1d3850b8a40d65fca767597a502b01f6b091f644/core-1.8.3-2.x-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../gradle-4.10.1/caches/modules-2/files-2.1/com.github.VictorAlbertos.RxCache/core/1.8.3-2.x/1d3850b8a40d65fca767597a502b01f6b091f644/core-1.8.3-2.x-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

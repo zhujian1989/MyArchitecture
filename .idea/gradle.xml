@@ -5,6 +5,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-4.10.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -13,6 +14,8 @@
             <option value="$PROJECT_DIR$/libdata" />
             <option value="$PROJECT_DIR$/libprovider" />
             <option value="$PROJECT_DIR$/libres" />
+            <option value="$PROJECT_DIR$/moduleflutter" />
+            <option value="$PROJECT_DIR$/moduleflutter/.android/Flutter" />
             <option value="$PROJECT_DIR$/modulesearch" />
             <option value="$PROJECT_DIR$/moduleusers" />
           </set>

@@ -20,10 +20,18 @@ android {
 
     }
 
+    signingConfigs {
+        release {
+            keyAlias 'jz'
+            keyPassword '123456'
+            storeFile file('../building_system/jz.jks')
+            storePassword '123456'
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 

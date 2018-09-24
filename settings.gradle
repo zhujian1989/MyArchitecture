@@ -4,4 +4,11 @@ include ':app',
         ':libdata',
         ':moduleusers',
         ':modulesearch',
-        ':libprovider'
+        ':libprovider',
+        ':moduleflutter'
+setBinding(new Binding([gradle: this]))                                 // new
+evaluate(new File(                                                      // new
+        settingsDir.parentFile,                                               // new
+        'MyArchitecture/moduleflutter/.android/include_flutter.groovy'                          // new
+))
+

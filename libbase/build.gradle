@@ -106,6 +106,8 @@ dependencies {
 
     api deps.multidex
 
+    api project(':flutter')
+
 //    debugImplementation deps.leakcanary.debug
 //    debugImplementation deps.leakcanary.debug_support
 //    releaseImplementation deps.leakcanary.release
@@ -116,4 +118,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
     implementation project(path: ':libdata')
     implementation project(path: ':libres')
+
 }

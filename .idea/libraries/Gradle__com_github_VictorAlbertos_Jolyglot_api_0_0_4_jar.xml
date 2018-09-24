@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.VictorAlbertos.Jolyglot:api:0.0.4@jar">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../gradle-4.9/caches/modules-2/files-2.1/com.github.VictorAlbertos.Jolyglot/api/0.0.4/80a382133062b156b7ffba6a8e574b58ae9c99a0/api-0.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../gradle-4.10.1/caches/modules-2/files-2.1/com.github.VictorAlbertos.Jolyglot/api/0.0.4/80a382133062b156b7ffba6a8e574b58ae9c99a0/api-0.0.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../gradle-4.9/caches/modules-2/files-2.1/com.github.VictorAlbertos.Jolyglot/api/0.0.4/421d5cb3aff58e6d850504ae67d80ea0b78493b4/api-0.0.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../gradle-4.10.1/caches/modules-2/files-2.1/com.github.VictorAlbertos.Jolyglot/api/0.0.4/421d5cb3aff58e6d850504ae67d80ea0b78493b4/api-0.0.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
