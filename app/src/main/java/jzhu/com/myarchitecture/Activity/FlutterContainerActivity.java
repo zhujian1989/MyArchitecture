@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.WindowManager;
 import com.alibaba.android.arouter.facade.annotation.Autowired;
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -15,10 +16,15 @@ import jzhu.com.libbase.base.CustomFlutterActivity;
 import jzhu.com.libbase.util.ToastUtils;
 import jzhu.com.libprovider.config.RouterPath;
 
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+
 @Route(path = RouterPath.MainPath.MAIN_FLUTTER_CONTAINER, name = "FlutterContainerActivity")
 public class FlutterContainerActivity extends CustomFlutterActivity {
 
     private static String CHANNEL = "com.jzhu.msg/plugin";
+
+    private static String CHANNEL_BINARY = "com.jzhu.msg.binary/plugin";
 
     private static int TIME_ONE_SECOND = 1000;
 
@@ -59,7 +65,9 @@ public class FlutterContainerActivity extends CustomFlutterActivity {
 
     }
 
+
     private void initTestBasicMessage() {
+
         BasicMessageChannel channel = new BasicMessageChannel<String>(
                 getFlutterView(), CHANNEL, StringCodec.INSTANCE);
         channel.setMessageHandler((o, reply) -> {
@@ -67,6 +75,19 @@ public class FlutterContainerActivity extends CustomFlutterActivity {
             reply.reply("FlutterContainerActivity：回条消息给你");
         });
         new Handler().postDelayed(() -> channel.send("FlutterContainerActivity：发条消息给你"), TIME_ONE_SECOND);
+
+        ByteBuffer message = ByteBuffer.allocateDirect(256);
+        message.putDouble(3.14);
+        message.putInt(123456789);
+        new Handler().postDelayed(() -> getFlutterView().send(CHANNEL_BINARY,message), TIME_ONE_SECOND);
+        getFlutterView().setMessageHandler(CHANNEL_BINARY, (byteBuffer, binaryReply) -> {
+            byteBuffer.order(ByteOrder.nativeOrder());
+            double x = byteBuffer.getDouble();
+            int n = byteBuffer.getInt();
+            Log.i("zj", "Received: "+x+ " and "+ n);
+            binaryReply.reply(message);
+        });
+
     }
 
     private void initHomeBasicMessage() {

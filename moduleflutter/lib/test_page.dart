@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:core';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -15,9 +16,13 @@ class _TestPageState extends State<TestPage> {
   static const channel =
       const BasicMessageChannel<String>('com.jzhu.msg/plugin', StringCodec());
 
+  static const String channelBinary = 'com.jzhu.msg.binary/plugin';
+
   String _receivedMsg ='';
 
   String _replyMsg ='';
+
+  ByteData _replyBinaryMsg ;
 
   Future<bool> _requestPop() {
     SystemNavigator.pop();
@@ -25,15 +30,37 @@ class _TestPageState extends State<TestPage> {
   }
 
   void _sendMsg2Android() async {
+
      _replyMsg = await channel.send('TestPage：发条消息给你');
      setState(() {});
+
+     final WriteBuffer buffer = WriteBuffer()
+       ..putFloat64(3.14)
+       ..putInt32(123456789);
+     final ByteData message = buffer.done();
+     _replyBinaryMsg = await BinaryMessages.send(channelBinary, message);
+     _decodeData(message);
+
   }
 
   void _initMessageHandler() {
+
     channel.setMessageHandler((String message) async {
       _receivedMsg  = message;
       setState(() {});
       });
+
+    BinaryMessages.setMessageHandler(channelBinary, (ByteData message) async {
+      _decodeData(message);
+    });
+
+  }
+
+  void _decodeData(ByteData message){
+    final ReadBuffer readBuffer = ReadBuffer(message);
+    final double x = readBuffer.getFloat64();
+    final int n = readBuffer.getInt32();
+    print('Received $x and $n');
   }
 
   @override

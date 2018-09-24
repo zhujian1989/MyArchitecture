@@ -22,6 +22,6 @@ void main() {
     '/homepage': (BuildContext context) => new MyHomePage(),
       '/testpage': (BuildContext context) => new TestPage(),
 
-  }, home: new MyHomePage()));
+  }, home: MyHomePage()));
 }
 
