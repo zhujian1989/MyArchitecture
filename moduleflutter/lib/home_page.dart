@@ -15,9 +15,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   static const jumpPlugin = const MethodChannel('com.jzhu.jump/plugin');
-
-  static const channel = const BasicMessageChannel<String>('com.jzhu.msg/plugin', StringCodec());
-
+  
   Future<Null> _jumpToNative() async {
     Map<String, String> map = {"path": "/main/TestActivity"};
 
