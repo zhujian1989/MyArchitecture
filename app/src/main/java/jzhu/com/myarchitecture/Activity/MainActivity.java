@@ -16,6 +16,7 @@ import jzhu.com.libprovider.config.RouterPath;
 import jzhu.com.libprovider.providers.ModuleSearchService;
 import jzhu.com.libprovider.providers.ModuleUserService;
 import jzhu.com.myarchitecture.R;
+import jzhu.com.myarchitecture.widget.EnhanceTabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,7 @@ import java.util.List;
 public class MainActivity extends BaseActivity {
 
     @BindView(R.id.tab_layout)
-    TabLayout tabLayout;
+    EnhanceTabLayout tabLayout;
 
     @BindView(R.id.viewpager)
     ViewPager viewPager;
@@ -34,7 +35,7 @@ public class MainActivity extends BaseActivity {
     @Autowired
     ModuleUserService moduleUserService;
 
-    private String[] tabTitles = new String[] { "Module User", "Module Search" };
+    private String[] tabTitles = new String[] { "Module User", "Module Search","AAAA", "BBBB","CCCC", "DDDD","EEEE", "FFFFFF" };
 
     private List<Fragment> fragments;
 
@@ -58,14 +59,28 @@ public class MainActivity extends BaseActivity {
         fragments = new ArrayList<>();
         fragments.add(moduleUserService.getModuleUserFragment());
         fragments.add(moduleSearchService.getModuleSearchFragment());
+        fragments.add(moduleUserService.getModuleUserFragment());
+        fragments.add(moduleSearchService.getModuleSearchFragment());
+        fragments.add(moduleUserService.getModuleUserFragment());
+        fragments.add(moduleSearchService.getModuleSearchFragment());
+        fragments.add(moduleUserService.getModuleUserFragment());
+        fragments.add(moduleSearchService.getModuleSearchFragment());
     }
+
+
 
     private void initTabLayout() {
         ModuleAdapter adapter = new ModuleAdapter(this.getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+        for(int i=0;i<tabTitles.length;i++){
+            tabLayout.addTab(tabTitles[i]);
+        }
+
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout.getTabLayout()));
         tabLayout.setupWithViewPager(viewPager);
-        tabLayout.setTabMode(TabLayout.MODE_FIXED);
+
     }
+
 
     @OnClick(R.id.float_btn)
     public void onViewClicked() {
