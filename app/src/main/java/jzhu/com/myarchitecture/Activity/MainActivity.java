@@ -35,7 +35,7 @@ public class MainActivity extends BaseActivity {
     @Autowired
     ModuleUserService moduleUserService;
 
-    private String[] tabTitles = new String[] { "Module User", "Module Search","AAAA", "BBBB","CCCC", "DDDD","EEEE", "FFFFFF" };
+    private String[] tabTitles = new String[] { "Module User", "Module Search"};
 
     private List<Fragment> fragments;
 
@@ -57,12 +57,6 @@ public class MainActivity extends BaseActivity {
 
     private void initFragments() {
         fragments = new ArrayList<>();
-        fragments.add(moduleUserService.getModuleUserFragment());
-        fragments.add(moduleSearchService.getModuleSearchFragment());
-        fragments.add(moduleUserService.getModuleUserFragment());
-        fragments.add(moduleSearchService.getModuleSearchFragment());
-        fragments.add(moduleUserService.getModuleUserFragment());
-        fragments.add(moduleSearchService.getModuleSearchFragment());
         fragments.add(moduleUserService.getModuleUserFragment());
         fragments.add(moduleSearchService.getModuleSearchFragment());
     }

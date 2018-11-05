@@ -23,7 +23,7 @@
 ext.deps = [:]
 def versions = [:]
 versions.lifecycle = "1.1.1"
-versions.support = "27.1.1"
+versions.support = "28.0.0"
 versions.multidex = "1.0.2"
 versions.dagger = "2.17"
 versions.junit = "4.12"
