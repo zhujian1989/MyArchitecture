@@ -7,8 +7,11 @@
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:id="@+id/num_text"
-              android:text="111111111"
-              android:textColor="@color/common_yellow"
+              android:text="111111111/n22222222
+33333333333333
+442342442342342
+432423423423424"
+              android:textColor="@color/common_red"
               android:layout_centerInParent="true"
     />
 </RelativeLayout>

@@ -13,6 +13,7 @@ import io.reactivex.schedulers.Schedulers;
 import jzhu.com.libbase.base.BaseMvpFragment;
 import jzhu.com.libprovider.model.UserModel;
 import jzhu.com.libprovider.providers.ModuleSearchService;
+import jzhu.com.moduleusers.NoScrollLinearLayoutManager;
 import jzhu.com.moduleusers.R;
 import jzhu.com.moduleusers.R2;
 import jzhu.com.moduleusers.mvp.Presenter.UsersPresenter;
